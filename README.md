@@ -38,7 +38,12 @@ Start Server and Run the Application :
   * Click 'Finish'.
     
     
-Database Properties : Port: 1527 User: postgres password: 123
+Database Properties : 
+
+      DB Name: Test
+      Port: 1527 
+      User: postgres 
+      password: 123
 
     
   
