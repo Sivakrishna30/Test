@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style>
+h1 {
+	font-size: 25px;
+}
+
+form {
+	color: black;
+	background-color: #98B4D4;
+	text-align: center;
+	padding: 30px;
+	width: 25%;
+	border-style: solid;
+	border-color: black;
+	margin: 200px;
+	margin-left: 500px;
+	font-family: Verdana, sans-serif;
+}
+
+button {
+	padding: 10px;
+	background-color: #F7CAC9;
+}
+</style>
+</head>
+<body>
+
+	<form action="/MySite/LoginPage" method="post">
+		<h1>Hi Buddy!</h1>
+		Name : <input type="text" name="name" required><br> <br>Password
+		: <input type="password" name="password" required><br> <br>
+		<button type="submit">Login</button>
+		<br> <br> <a color="black" href="ResetPassword.html">Forgot
+			Password ?</a>
+	</form>
+
+
+</body>

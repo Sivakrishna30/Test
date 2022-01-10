@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Info</title>
+</head>
+<style>
+h1 {
+	font-size: 25px;
+}
+
+form {
+	color: black;
+	background-color: #98B4D4;
+	text-align: center;
+	padding: 30px;
+	width: 25%;
+	border-style: solid;
+	border-color: black;
+	margin: 200px;
+	margin-left: 500px;
+	font-family: Verdana, sans-serif;
+}
+
+button {
+	padding: 10px;
+	background-color: #F7CAC9;
+}
+</style>
+</head>
+<body>
+
+	<form action="/MySite/Update" method="post">
+		<h1>Update Data</h1>
+		Gender : <input type="radio" name="gender" value="Male" required>
+		<label for="html">Male</label><br> <br> <input type="radio"
+			name="gender" value="Female" required> <label for="html">Female</label><br>
+		<br> <input type="radio" name="gender" value="Others" required>
+		<label for="html">Others</label><br> <br>Age : <input
+			type="text" name="age" required><br> <br> Phone : <input
+			type="text" name="phone" required><br> <br> Email :
+		<input type="email" name="email" required><br> <br>
+		City : <input type="text" name="city" required><br> <br>
+		<button type="submit">Update</button>
+	</form>
+</body>
+</html>

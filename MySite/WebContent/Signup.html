@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign up</title>
+<script type="text/javascript">
+	function check() {
+		if (document.getElementById('password').value == document
+				.getElementById('confirm_password').value) {
+			document.getElementById('message').style.color = 'green';
+			document.getElementById('message').innerHTML = 'password matching';
+		} else {
+			document.getElementById('message').style.color = 'red';
+			document.getElementById('message').innerHTML = 'password not matching';
+		}
+	}
+</script>
+<style>
+h1 {
+	font-size: 25px;
+}
+
+form {
+	color: black;
+	background-color: #98B4D4;
+	text-align: center;
+	padding: 30px;
+	width: 25%;
+	border-style: solid;
+	border-color: black;
+	margin: 200px;
+	margin-left: 500px;
+	font-family: Verdana, sans-serif;
+}
+
+button {
+	padding: 10px;
+	background-color: #F7CAC9;
+}
+</style>
+</head>
+<body>
+
+	<form action="/MySite/SignupPage" method="post">
+		<h1>Welcome Buddy!!</h1>
+		Name : <input type="text" name="name" required><br> <br>
+		Gender : <input type="radio" name="gender" value="Male" required>
+		<label for="html">Male</label><br> <br> <input type="radio"
+			name="gender" value="Female" required> <label for="html">Female</label><br>
+		<br> <input type="radio" name="gender" value="Others" required>
+		<label for="html">Others</label><br> <br>Age : <input
+			type="text" name="age" required><br> <br> Phone : <input
+			type="text" name="phone" required><br> <br> Email :
+		<input type="email" name="email" required><br> <br>
+		City : <input type="text" name="city" required><br> <br>Password
+		: <input type="password" name="password" required><br> <br>
+		Confirm Password : <input type="password" name="confirm_password"
+			id="confirm_password" onkeyup="check()"><br>
+		<span id='message'></span> <br> <br>
+		<button type="submit">Sign up</button>
+	</form>
+</body>
+</html>
