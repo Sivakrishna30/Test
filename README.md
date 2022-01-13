@@ -44,6 +44,8 @@ Database Properties :
       Port: 1527 
       User: postgres 
       password: 123
+      
+Added db.properties file to edit the properties of the Database.
 
     
   
