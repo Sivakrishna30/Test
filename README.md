@@ -9,7 +9,7 @@ Contents :
 
 Introduction :
 
-      "Welcome to My Site" is a website stores information of the Users. This is a simple User registration web application.
+      "Welcome to My Site" is a website, which stores information of the Users. This is a simple User registration web application.
       
       
 Requirements :
